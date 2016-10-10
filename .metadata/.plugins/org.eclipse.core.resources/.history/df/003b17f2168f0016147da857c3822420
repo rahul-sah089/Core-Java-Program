@@ -1,0 +1,12 @@
+package reguarExpression;
+import java.util.regex.*;
+
+public class RegesQuantifier {
+	public static void main(String[] args){
+		System.out.println("Main method Started");
+		System.out.println("Regex quantifier");
+		System.out.println(Pattern.matches([amn]?,""));
+		
+	}
+
+}

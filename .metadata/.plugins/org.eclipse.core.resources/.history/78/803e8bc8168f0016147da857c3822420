@@ -1,0 +1,8 @@
+package reguarExpression;
+
+public class RegesQuantifier {
+	public static void main(String[] args){
+		
+	}
+
+}

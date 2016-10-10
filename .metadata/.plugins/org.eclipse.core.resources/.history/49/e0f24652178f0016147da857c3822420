@@ -1,0 +1,17 @@
+package reguarExpression;
+import java.util.regex.*;
+
+public class RegesQuantifier {
+	public static void main(String[] args){
+		System.out.println("Main method Started");
+		System.out.println("Regex quantifier ?...");//once or none
+		System.out.println(Pattern.matches("[amn]?",""));
+		System.out.println(Pattern.matches("[amn]?","a"));
+		System.out.println(Pattern.matches("[amn]?", "aammmnn"));//false (a m and n comes more than one time)  
+		System.out.println(Pattern.matches("[amn]?", "aazzta"));//false (a comes more than one time)  
+		System.out.println(Pattern.matches("[amn]?", "am"));//false (a or m or n must come one time)  
+		
+		
+	}
+
+}
