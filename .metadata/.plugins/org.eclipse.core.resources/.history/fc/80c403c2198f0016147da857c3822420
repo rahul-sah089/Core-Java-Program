@@ -1,0 +1,14 @@
+package reguarExpression;
+
+public class RegexMetaData {
+	public static void main(String[] args){
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		
+	}
+}

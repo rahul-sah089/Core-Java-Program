@@ -1,0 +1,26 @@
+package reguarExpression;
+import java.util.regex.Pattern;
+
+public class RegexMetaData {
+	public static void main(String[] args){
+		System.out.println("Meta Character \\d"); //Any digits, short of [0-9]
+		System.out.println(Pattern.matches("\\d", "abc")); //false (non-digit)
+		System.out.println(Pattern.matches("\\d?", "112"));  //false(digit more then once)
+		System.out.println(Pattern.matches("\\d*", ""));     //true(digit search for zero or more)
+		System.out.println(Pattern.matches("\\d+", ""));  //false(digit is zero)
+		System.out.println(Pattern.matches("\\d+", "124"));  //true(digit is zero)
+		
+		System.out.println("Meta Character \\D"); //Any non-digit, short for [^0-9]
+		System.out.println(Pattern.matches("\\D", "abc"));  //false(non-digit but comes more then once)
+		System.out.println(Pattern.matches("\\D+", "abc"));  //true(non-digit and comes more then once)
+		System.out.println(Pattern.matches("\\D+", "abc"));  //true(non-digit and comes more then once)
+		System.out.println(Pattern.matches("\\D+", "abc"));  //true(non-digit and comes more then once)
+		
+		
+		
+		
+		
+		
+		
+	}
+}

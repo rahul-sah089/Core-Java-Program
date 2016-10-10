@@ -1,0 +1,16 @@
+package reguarExpression;
+import java.util.regex.Pattern;
+
+public class RegexMetaData {
+	public static void main(String[] args){
+		System.out.println(Pattern.matches("\\d", "abc")); //false (non-digit)
+		System.out.println(Pattern.matches("\\d?", "112"));  //false(digit more then once)
+		System.out.println(Pattern.matches("\\d*", ""));     //true(digit search for zero or more)
+		System.out.println(Pattern.matches("\\d+", ""));  //false(digit is zero)
+		System.out.println(Pattern.matches("\\d+", ""));  //false(digit is zero)
+		
+		
+		
+		
+	}
+}

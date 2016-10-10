@@ -1,0 +1,15 @@
+package reguarExpression;
+import java.util.regex.Pattern;
+
+public class RegexMetaData {
+	public static void main(String[] args){
+		System.out.println(Pattern.matches("\\d", "abc"));
+		System.out.println(Pattern.matches("\\d", "12"));
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		System.out.println("Regex MetaData example");
+		
+	}
+}
