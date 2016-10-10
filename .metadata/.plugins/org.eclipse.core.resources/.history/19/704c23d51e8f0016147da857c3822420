@@ -1,0 +1,7 @@
+package reguarExpression;
+
+public class RegexExample7 {
+	public static void main(String[] args){
+		System.out.println("by character classes and quantifiers ...");  
+	}
+}

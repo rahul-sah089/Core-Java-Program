@@ -1,0 +1,9 @@
+package reguarExpression;
+import java.util.regex.Pattern;
+
+public class RegexExample7 {
+	public static void main(String[] args){
+		System.out.println("by character classes and quantifiers ...");
+		System.out.println(Pattern.matches("[789]{1}[12467890]{9}","12467890"));
+	}
+}
