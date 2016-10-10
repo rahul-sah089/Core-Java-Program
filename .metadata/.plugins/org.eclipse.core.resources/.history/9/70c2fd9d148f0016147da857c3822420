@@ -1,0 +1,10 @@
+package reguarExpression;
+import java.util.regex.*;
+
+public class RegexClasses {
+	public static void main(String[] args){
+		System.out.println("Main Method Started");
+		System.out.println(Pattern.matches("[amn]","abcd"));
+		System.out.println("Main Method Ended");
+	}
+}
