@@ -1,0 +1,13 @@
+package RegularExpression;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegularExpressionQuantifier {
+	public static void main(String[] args){
+		System.out.println("Quantifier example started");
+		System.out.print(Pattern.matches("[amn]?", arg1));
+		System.out.println("Quantifier example ended");
+		
+	}
+
+}
