@@ -1,0 +1,8 @@
+package reguarExpression;
+
+public class BasicExample2 {
+	public static void main(String[] args){
+		
+	}
+
+}

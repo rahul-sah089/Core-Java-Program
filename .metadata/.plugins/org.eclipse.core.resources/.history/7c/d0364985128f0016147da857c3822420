@@ -1,0 +1,12 @@
+package reguarExpression;
+import java.util.regex.*;
+
+public class BasicExample2 {
+	public static void main(String[] args){
+		System.out.println("Main method Started");
+		//1st way
+		System.out.println(Pattern.matches("*s", "rahuls"));
+		System.out.println("Main method Ended");
+	}
+
+}

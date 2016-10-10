@@ -1,0 +1,16 @@
+package reguarExpression;
+import java.util.regex.*;
+
+public class BasicExample2 {
+	public static void main(String[] args){
+		System.out.println("Main method Started");
+		//1st way
+		Pattern p = Pattern.compile(".s");
+		Matcher matcher = p.matcher("as");
+		boolean status1 = matcher.matches();
+		
+		//2nd way
+		Pattern.compile(".s").matcher("as").matches();
+	}
+
+}

@@ -1,0 +1,11 @@
+package reguarExpression;
+import java.util.*;
+
+public class BasicExample1 {
+	public static void main(String[] args){
+		System.out.println("Main method started");
+		Pattern 
+		System.out.println("Main method ended");
+	}
+
+}
