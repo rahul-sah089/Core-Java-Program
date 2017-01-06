@@ -1,0 +1,18 @@
+/* Thread can be created by:
+ * 1) By extending Thread class
+ * 2) By implementing Runnable interface
+ *  
+*/
+
+/*
+ * 
+ */
+public class CreatingThread extends Thread {
+	public void run(){
+		System.out.println("thread is running");
+	}
+	public static void main(String[] args){
+		CreatingThread thread = new CreatingThread();
+		thread.start();
+	}
+}
