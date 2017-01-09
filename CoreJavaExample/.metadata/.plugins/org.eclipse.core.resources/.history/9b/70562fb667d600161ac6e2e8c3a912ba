@@ -1,0 +1,12 @@
+package sorting;
+
+public class Employee {
+	
+	private int id;
+	private String empName;
+	private Double salary;
+	private String desc;
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package sorting;
+
+public class ObjectSortExample1 {
+	
+	public static void main(String[] args){
+		Employee emp1 = new Employee(1,"Rahul",30000,"This is emp1");
+		
+	
+		
+	}
+
+}
