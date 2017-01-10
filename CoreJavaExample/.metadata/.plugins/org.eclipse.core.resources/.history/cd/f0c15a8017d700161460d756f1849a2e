@@ -1,0 +1,23 @@
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class TreeSetExample {
+	public static void main(String[] args) {
+		TreeSet<Integer> times = new TreeSet<Integer>();
+		times.add(1200);
+		times.add(900);
+		times.add(800);
+		times.add(1300);
+		times.add(1130);
+		times.add(2200);
+		times.add(2215);
+		times.add(2212);
+		times.add(2240);
+		times.add(2330);
+		Iterator<Integer> itr = times.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+
+	}
+}

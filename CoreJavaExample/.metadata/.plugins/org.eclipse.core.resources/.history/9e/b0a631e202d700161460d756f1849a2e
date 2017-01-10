@@ -1,0 +1,19 @@
+package usingMap;
+
+class Dog {
+	public String name;
+
+	public Dog(String name) {
+		this.name = name;
+	}
+	
+	public boolean equals(Object o){
+		if((o instanceof Dog) && ((Dog)o).name == name)) {
+			
+		}
+	}
+}
+
+public class UsingMap {
+
+}
