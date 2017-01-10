@@ -1,0 +1,15 @@
+package usingList;
+
+class Dog {
+	public String name;
+
+	Dog(String name) {
+		this.name = name;
+	}
+}
+
+public class UsingListExample1 {
+	public static void main(String[] args){
+		
+	}
+}

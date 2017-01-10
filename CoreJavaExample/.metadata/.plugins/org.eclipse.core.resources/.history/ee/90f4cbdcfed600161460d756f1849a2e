@@ -1,0 +1,36 @@
+package usingList;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+class Dog {
+	public String name;
+
+	Dog(String name) {
+		this.name = name;
+	}
+}
+
+public class UsingListExample1 {
+	public static void main(String[] args){
+		System.out.println("Main Method started");
+		List<Dog> dogList =  new ArrayList<Dog>();
+		Dog dog1 = new Dog("Marry");
+		Dog dog2 = new Dog("Tommy");
+		Dog dog3 = new Dog("Rambo");
+		Dog dog4 = new Dog("Rocky");
+		
+		dogList.add(dog1);
+		dogList.add(dog2);
+		dogList.add(dog3);
+		dogList.add(dog4);
+		
+		Iterator<Dog> dogIterator =  dogList.iterator();
+		while(dogIterator.hasNext()){
+			
+		}
+		
+		System.out.println("Main Method Ended");
+	}
+}

@@ -1,0 +1,24 @@
+package usingList;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Dog {
+	public String name;
+
+	Dog(String name) {
+		this.name = name;
+	}
+}
+
+public class UsingListExample1 {
+	public static void main(String[] args){
+		System.out.println("Main Method started");
+		List<Dog> dogList =  new ArrayList<Dog>();
+		Dog dog1 = new Dog("Marry");
+		Dog dog2 = new Dog("Tommy");
+		Dog dog3 = new Dog("Marry");
+		Dog dog4 = new Dog("Marry");
+		System.out.println("Main Method Ended");
+	}
+}
