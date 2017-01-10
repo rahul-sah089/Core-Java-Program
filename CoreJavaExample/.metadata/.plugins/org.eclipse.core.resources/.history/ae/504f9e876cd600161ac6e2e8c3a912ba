@@ -1,0 +1,26 @@
+package sorting;
+
+import java.util.Comparator;
+
+public class EmployeeNew {
+	private Integer id;
+	private String empName;
+	private String des;
+	private Double salary;
+	
+	public EmployeeNew(Integer id, String empName, String des, Double salary) {
+		super();
+		this.id = id;
+		this.empName = empName;
+		this.des = des;
+		this.salary = salary;
+	}
+	
+	public static Comparator<Employee> empComparator = new Comparator<Employee>() {
+		
+		
+	};
+	
+	
+	
+}

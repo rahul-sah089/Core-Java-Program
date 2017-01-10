@@ -1,0 +1,40 @@
+package sorting;
+
+import java.util.Comparator;
+
+public class EmployeeNew {
+	private Integer id;
+	private String empName;
+	private String des;
+	private Double salary;
+
+	public EmployeeNew(Integer id, String empName, String des, Double salary) {
+		super();
+		this.id = id;
+		this.empName = empName;
+		this.des = des;
+		this.salary = salary;
+	}
+
+	public static Comparator<Employee> empComparatorByName = new Comparator<Employee>() {
+
+		@Override
+		public int compare(Employee o1, Employee o2) {
+			String empName1 = o1.getEmpName();
+			String empName2 = o2.getEmpName();
+			return empName1.compareTo(empName2);
+		}
+
+	};
+
+	public static Comparator<Employee> empComparatorById = new Comparator<Employee>() {
+
+		@Override
+		public int compare(Employee o1, Employee o2) {
+			String empName1 = o1.getEmpName();
+			String empName2 = o2.getEmpName();
+			return empName1.compareTo(empName2);
+		}
+
+	};
+}
