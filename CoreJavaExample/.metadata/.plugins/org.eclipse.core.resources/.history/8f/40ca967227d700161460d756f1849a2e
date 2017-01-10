@@ -1,0 +1,11 @@
+
+public class ReverseString {
+	public static void main(String[] args){
+		String values  = "This is rahul";
+		char[] chars  = values.toCharArray();
+		for(int i = chars.length ; i >0;i--){
+			
+		}
+		
+	}
+}
