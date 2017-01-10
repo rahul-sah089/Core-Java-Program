@@ -1,0 +1,16 @@
+public class DecimalToBinary {
+	public static void main(String[] args) {
+
+	}
+
+	public static String decToBin(int dec) {
+		String result = "";
+		int rem = 0;
+		while (dec != 0) {
+			rem = dec % 2;
+			dec = dec / 2;
+			
+		}
+		return null;
+	}
+}

@@ -1,0 +1,13 @@
+
+public class DecimalToBinary {	
+	public static void main(String[] args){
+		
+	}
+	
+	public static String decToBin(int dec){
+		while(dec != 0){
+			
+		}
+		return null; 
+	}
+}
