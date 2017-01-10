@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+
+
+public class FindingDuplicates {
+	public static void main(String[] args){
+		List<Integer> duplicates = new ArrayList<E>();
+	}
+}

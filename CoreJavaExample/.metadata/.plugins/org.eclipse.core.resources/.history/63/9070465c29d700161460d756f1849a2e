@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class FindingDuplicates {
+	public static void main(String[] args){
+		List<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(1);
+		numbers.add(1);
+		numbers.add(1);
+		numbers.add(1);
+		numbers.add(1);numbers.add(1);
+		numbers.add(1);
+		numbers.add(1);numbers.add(1);
+		numbers.add(1);
+		numbers.add(1);
+		numbers.add(1);
+		List<Integer> duplicates = new ArrayList<Integer>();
+		
+	}
+	
+	public List<Integer> returnList(){
+		return null;
+	}
+}
