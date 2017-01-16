@@ -1,0 +1,16 @@
+package creational.builder;
+
+public class VegBurger extends Burger{
+
+	@Override
+	public String name() {
+		return "veg-burger";
+	}
+
+	@Override
+	public float price() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
