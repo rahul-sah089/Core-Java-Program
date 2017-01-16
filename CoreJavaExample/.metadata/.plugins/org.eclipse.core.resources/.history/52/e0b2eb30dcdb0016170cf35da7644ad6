@@ -1,0 +1,30 @@
+package creational.abstractFactory;
+
+public class ColorFactory extends AbstractFactory {
+
+	@Override
+	Color getColor(String color) {
+		if (color == null) {
+			return null;
+		}
+		if (color.equalsIgnoreCase("Red")) {
+
+		}
+		if (color.equalsIgnoreCase("Red")) {
+
+		}
+		if (color.equalsIgnoreCase("Red")) {
+
+		}
+		if (color.equalsIgnoreCase("Red")) {
+
+		}
+		return null;
+	}
+
+	@Override
+	Shape getShape(String shape) {
+		return null;
+	}
+
+}
