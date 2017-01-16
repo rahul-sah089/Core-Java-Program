@@ -1,0 +1,23 @@
+package creational.singleton;
+
+class SingletonExample1
+{
+	private static SingletonExample1 instance;
+	private SingletonExample1()
+	{
+		
+	}
+
+	public static synchronized SingletonExample1 getInstance()
+	{
+		if (instance == null)
+			instance = new SingletonExample1();
+
+		return instance;
+	}
+	
+	public void doSomething()
+	{
+		...	
+	}
+}

@@ -1,0 +1,9 @@
+package creational.singleton;
+
+class SingletonExample1 {
+	private static SingletonExample1 instance;
+	
+	
+	
+	
+}

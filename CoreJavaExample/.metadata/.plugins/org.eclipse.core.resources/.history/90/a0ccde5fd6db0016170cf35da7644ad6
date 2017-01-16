@@ -1,0 +1,14 @@
+package creational.singleton;
+
+class SingletonExample1 {
+	private static SingletonExample1 instance;
+
+	public static SingletonExample1 getInstance() {
+		return instance;
+	}
+
+	public static void setInstance(SingletonExample1 instance) {
+		SingletonExample1.instance = instance;
+	}
+
+}
