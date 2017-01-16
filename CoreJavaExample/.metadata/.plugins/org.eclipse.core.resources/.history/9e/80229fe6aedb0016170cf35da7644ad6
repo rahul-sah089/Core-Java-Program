@@ -1,0 +1,7 @@
+package creational.example1;
+
+public class GetPlanFactory {
+	public Plan getPan(String planType){
+		
+	}
+}

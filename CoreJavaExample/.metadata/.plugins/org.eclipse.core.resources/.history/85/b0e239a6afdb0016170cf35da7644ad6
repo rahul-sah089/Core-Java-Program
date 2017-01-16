@@ -1,0 +1,13 @@
+package creational.example1;
+
+import java.util.Scanner;
+
+public class GenerateBill {
+	Scanner scan = new Scanner(System.in);
+	
+	
+	GetPlanFactory getPlanFactory =  new GetPlanFactory();
+	
+	
+
+}

@@ -1,0 +1,20 @@
+package creational.example1;
+
+public class GetPlanFactory {
+	public Plan getPlan(String planType){
+		if(planType == null){
+			return null;
+		}
+		if(planType == "Domestic"){
+			return new DomesticPlan();
+		}
+		
+		if(planType == "Commericial"){
+			return new CommercialPlan();
+		}
+		
+		if(planType == "Institutional"){
+			re
+		}
+	}
+}

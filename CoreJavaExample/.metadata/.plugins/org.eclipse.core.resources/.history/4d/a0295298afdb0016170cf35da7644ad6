@@ -1,0 +1,10 @@
+package creational.example1;
+
+public class GenerateBill {
+	Scanner scan = 
+	
+	GetPlanFactory getPlanFactory =  new GetPlanFactory();
+	
+	
+
+}
