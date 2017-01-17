@@ -1,0 +1,44 @@
+1) What are different ways to create String Object?
+
+We can create String object using new operator like any normal java class or 
+we can use double quotes to create a String object. 
+There are several constructors available in String class to get String from char array, byte array, StringBuffer and StringBuilder.
+
+String str = new String("abc");
+String str1 = "abc";
+
+When we create a String using double quotes, JVM looks in the String pool to find if any other String is stored with same value.
+If found, it just returns the reference to that String object else it creates a new String object with given value and stores it in the String pool.
+When we use new operator, JVM creates the String object but don’t store it into the String Pool.
+We can use intern() method to store the String object into String pool or return the reference 
+if there is already a String with equal value present in the pool.
+
+2) Write a method that will remove given character from the String?
+
+We can use replaceAll method to replace all the occurance of a String with another String. 
+The important point to note is that it accepts String as argument,
+ so we will use Character class to create String and use it to replace all the characters with empty String.
+
+    private static String removeChar(String str, char c) {
+        if (str == null)
+            return null;
+        return str.replaceAll(Character.toString(c), "");
+    }
+
+3) How can we make String upper case or lower case?
+
+We can use String class toUpperCase and toLowerCase methods to get the String in all upper case or lower case.
+These methods have a variant that accepts Locale argument and use that locale rules to convert String to upper or lower case.
+
+
+4) What is String subSequence method?
+
+Java 1.4 introduced CharSequence interface and String implements this interface, 
+this is the only reason for the implementation of subSequence method in String class. 
+Internally it invokes the String substring method.
+
+
+
+
+	
+	

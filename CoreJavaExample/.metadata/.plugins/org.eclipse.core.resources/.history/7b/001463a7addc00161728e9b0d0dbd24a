@@ -1,0 +1,9 @@
+package strings;
+
+public class StringSubsequence {
+	public static void main(String[] args){
+		System.out.println("Main Method Started");
+		String str = "www.rahulsah.me";
+		System.out.println("Main Method Ended");
+	}
+}
