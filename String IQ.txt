@@ -37,6 +37,18 @@ Java 1.4 introduced CharSequence interface and String implements this interface,
 this is the only reason for the implementation of subSequence method in String class. 
 Internally it invokes the String substring method.
 
+5) How to convert String to char and vice versa?
+
+This is a tricky question because String is a sequence of characters, so we can't convert it to a single character.
+We can use use charAt method to get the character at given index or we can use toCharArray() method to convert String to character array.
+
+6) Can we use String in switch case?
+This is a tricky question used to check your knowledge of current Java developments.
+ Java 7 extended the capability of switch case to use Strings also, earlier java versions doesn't support this.
+If you are implementing conditional flow for Strings,
+ you can use if-else conditions and you can use switch case if you are using Java 7 or higher versions.
+
+
 
 
 
