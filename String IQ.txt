@@ -47,6 +47,15 @@ This is a tricky question used to check your knowledge of current Java developme
  Java 7 extended the capability of switch case to use Strings also, earlier java versions doesn't support this.
 If you are implementing conditional flow for Strings,
  you can use if-else conditions and you can use switch case if you are using Java 7 or higher versions.
+ 
+ Keys points to know for java switch case String are:
+
+Java switch case String make code more readable by removing the multiple if-else-if chained conditions.
+Java switch case String is case sensitive, the output of example confirms it.
+Java Switch case uses String.equals() method to compare the passed value with case values, so make sure to add a NULL check to avoid NullPointerException.
+According to Java 7 documentation for Strings in Switch, 
+java compiler generates more efficient byte code for String in Switch statement than chained if-else-if statements.
+Make sure to use java switch case String only when you know that it will be used with Java 7 else it will throw Exception.
 
 
 
