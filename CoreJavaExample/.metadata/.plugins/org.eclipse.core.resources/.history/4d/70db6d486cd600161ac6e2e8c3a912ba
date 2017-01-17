@@ -1,8 +1,0 @@
-package sorting;
-
-public class EmployeeNew {
-	private Integer id;
-	private String empName;
-	private String des;
-	private double 
-}

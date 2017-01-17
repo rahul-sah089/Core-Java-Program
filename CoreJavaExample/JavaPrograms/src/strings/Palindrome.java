@@ -1,0 +1,22 @@
+package strings;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		System.out.println("Main Method Started");
+		System.out.println(isPalindrome("asddsa"));
+		System.out.println("Main method Ended");
+	}
+
+	public static boolean isPalindrome(String str) {
+		if (str == null) {
+			return false;
+		}
+		StringBuilder strBuilder = new StringBuilder(str);
+		String reversed = strBuilder.reverse().toString();
+		if (reversed.equals(str)) {
+			return true;
+		}
+		return false;
+	}
+}

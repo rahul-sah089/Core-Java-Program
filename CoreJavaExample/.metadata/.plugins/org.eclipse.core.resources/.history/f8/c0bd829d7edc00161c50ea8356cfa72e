@@ -1,0 +1,18 @@
+package strings;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		System.out.println("Main Method Started");
+		System.out.println(isPalindrome("asddsa"));
+		System.out.println("Main method Ended");
+	}
+
+	public static boolean isPalindrome(String str) {
+		if (str == null) {
+			return false;
+		}
+		boolean status = StringBuilder(str).reverse().equals(str);
+		return status;
+	}
+}
