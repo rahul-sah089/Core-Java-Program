@@ -1,0 +1,16 @@
+package strings;
+//This is the program that will re
+public class RemoveCharForStr {
+	public static void main(String[] args){
+		String strVal = removeChar("rahul", "r");
+	}
+	
+	public static String removeChar(String str,char c){
+		if(str == null){
+			return null;
+		}
+		return str.replaceAll(Character.toString(c),"");
+	}
+}
+
+ 

@@ -1,0 +1,13 @@
+package strings;
+//This is the program that will re
+public class RemoveCharForStr {
+	public static void main(String[] args){
+		
+	}
+	
+	public static void removeChar(char c){
+		
+	}
+}
+
+ 
