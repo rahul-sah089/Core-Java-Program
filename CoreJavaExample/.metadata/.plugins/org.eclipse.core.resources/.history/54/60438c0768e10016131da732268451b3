@@ -1,0 +1,5 @@
+package shallowCloining;
+
+public class Student implements Cloneable{
+
+}

@@ -1,0 +1,9 @@
+package shallowCloining;
+
+public class Course {
+	private String subject1;
+	private String subject2;
+	private String subject3;
+	
+
+}

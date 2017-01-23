@@ -1,0 +1,13 @@
+package shallowCloining;
+
+public class Student implements Cloneable{
+	private int id;
+	private String name;
+	private Course course;
+	
+	public Student(int id,String name,Course course){
+		this.id = id;
+		this.name = name;
+		this.course = course3;
+	}
+}

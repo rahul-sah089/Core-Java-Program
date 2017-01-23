@@ -1,0 +1,7 @@
+package shallowCloining;
+
+public class ShallowCopyInJava {
+	public static void main(String[] args){
+		
+	}
+}
