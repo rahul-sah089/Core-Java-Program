@@ -1,0 +1,8 @@
+package deepCloning;
+
+public class Course implements Cloneable {
+	private String subject1;
+	private String subject2;
+	private String subject3;
+	
+}

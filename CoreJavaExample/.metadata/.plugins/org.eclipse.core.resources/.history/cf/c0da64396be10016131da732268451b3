@@ -1,0 +1,23 @@
+package deepCloning;
+
+public class DeepCopyInJava {
+	public static void main(String[] args) {
+		Course course = new Course("Physics", "Chemistry", "Biology");
+		Student student1 = new Student(1, "Rahul", course);
+		Student student2 = null;
+
+		try {
+			student2 = (Student) student1.clone();
+		} catch (CloneNotSupportedException ex) {
+			ex.printStackTrace();
+		}
+		
+		//Printing newly clone subject3 value
+		System.out.println("Printing student2 subject3-->"+student2.getCouse().getSubject3());
+		
+		
+		
+		
+
+	}
+}

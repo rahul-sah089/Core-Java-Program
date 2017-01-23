@@ -1,0 +1,8 @@
+package deepCloning;
+
+public class DeepCopyInJava {
+	public static void main(String[] args){
+		Course course = new Course("Physics", "Chemistry", "Biology");
+		
+	}
+}

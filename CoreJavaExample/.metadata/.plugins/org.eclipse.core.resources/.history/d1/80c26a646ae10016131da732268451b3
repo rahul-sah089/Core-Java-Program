@@ -1,0 +1,9 @@
+package deepCloning;
+
+public class Student implements Cloneable {
+	private int id;
+	private String name;
+	private Course couse;
+	
+	
+}
