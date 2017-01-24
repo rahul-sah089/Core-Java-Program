@@ -1,0 +1,7 @@
+package innerclass.example1;
+
+public class Test {
+	class Inner{
+		
+	}
+}

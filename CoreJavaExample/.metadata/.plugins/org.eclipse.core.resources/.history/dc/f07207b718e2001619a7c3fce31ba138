@@ -1,0 +1,11 @@
+package innerclass.example1;
+
+public class OuterClass {
+	class InnerClass{
+		
+	}
+}
+
+public class Test{
+	
+}

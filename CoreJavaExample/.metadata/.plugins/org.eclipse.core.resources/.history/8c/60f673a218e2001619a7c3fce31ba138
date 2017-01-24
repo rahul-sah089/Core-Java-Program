@@ -1,0 +1,5 @@
+package innerclass.example1;
+
+public class MyOuter {
+
+}
