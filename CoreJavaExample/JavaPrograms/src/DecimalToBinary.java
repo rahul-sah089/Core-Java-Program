@@ -8,7 +8,7 @@ public class DecimalToBinary {
 		String result = decToBin(dec);
 		System.out.println("Decimal Number-->" + dec);
 		System.out.println("Binary Result --->" + result);
-		in.close();
+		in.close();///sdasdd
 	}
 
 	public static String decToBin(int dec) {
