@@ -1,1 +1,38 @@
-dfsf
+1) Is String a keyword in Java?
+No string is not a keyword. It is a "final class" in java.lang package 
+which is used to represent set of characters
+
+///////////////////////////////////////////////////////////////////////////////////
+2) In how many ways we can create String Object in Java?
+
+The String object can be created in two ways:
+1) Using "String literals"
+2) Using new keyword.
+
+String str  ="Rahul Sah";             //created using string literal
+String str = new String("Rahul Sah"); //created using new Keyword
+
+The object created using String "new" keyword is created in the Heap Memory.
+The object created using String literal is created in String constant pool.
+////////////////////////////////////////////////////////////////////////////////////////////
+4) What is string constant pool?
+
+String objects are most used data objects in Java.
+ Hence, java has a special arrangement to store the string objects.
+ String Constant Pool is one such arrangement.
+ String Constant Pool is the memory space in heap memory specially allocated to 
+ store the string objects created using string literals.
+ In String Constant Pool, there will be no two string objects having the same content.
+
+Whenever you create a string object using string literal,
+JVM first checks the content of the object to be created.
+If there exist an object in the string constant pool with the same content,
+then it returns the reference of that object. It doesn’t create a new object.
+If the content is different from the existing objects then only it creates new object.
+
+
+
+
+
+
+
