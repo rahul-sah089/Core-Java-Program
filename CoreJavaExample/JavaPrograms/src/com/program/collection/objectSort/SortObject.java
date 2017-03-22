@@ -23,7 +23,7 @@ public class SortObject {
 		System.out.println("Before Sort");
 		System.out.println("=============================");
 		printList(workOuts);
-		Arrays.sort(workOuts);
+		//Arrays.sort(workOuts);
 		System.out.println("=============================");
 		System.out.println("After Sort");
 		System.out.println("=============================");
