@@ -15,16 +15,17 @@ public class DateConversion {
 	public static String dateConversion(String inputDate) {
 		SimpleDateFormat sdfFrom = new SimpleDateFormat("dd/MM/yyyy");
 		SimpleDateFormat sdfTo = new SimpleDateFormat("dd-MM-yyyy");
-
+		String toDate = "";
 		try {
 			Date date = sdfFrom.parse(inputDate);
 			System.out.println("date==>"+date);
+			toDate = sdfTo.format(date);
 			
 			
 		} catch (ParseException ps) {
 			ps.printStackTrace();
 		}
 
-		return null;
+		return toDate;
 	}
 }
