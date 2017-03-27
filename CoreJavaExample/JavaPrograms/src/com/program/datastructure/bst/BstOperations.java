@@ -27,6 +27,22 @@ public class BstOperations {
 		return node;
 	}
 
+	public int count() {
+		return count(root);
+	}
+
+	public void preOrder() {
+		preOrder(root);
+	}
+
+	public void inOrder() {
+		inOrder(root);
+	}
+
+	public void postOrder() {
+		postOrder(root);
+	}
+
 	/* Count the number of nodes in BST */
 	public int count(BstNode root) {
 		if (root == null) {
@@ -69,5 +85,12 @@ public class BstOperations {
 			preOrder(root.getRight());
 		}
 	}
+	
+	//height of the binary search tree
+	
+	//delete
+	//Delete is the bst are of three type:
+	//1) Deleting the node which is the leaf node
+	//2)
 
 }
