@@ -1,5 +1,9 @@
 package com.program.datastructure.bst;
 
+import java.lang.management.MemoryManagerMXBean;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BstOperations {
 	private BstNode root;
 
@@ -85,12 +89,50 @@ public class BstOperations {
 			preOrder(root.getRight());
 		}
 	}
-	
-	//height of the binary search tree
-	
-	//delete
-	//Delete is the bst are of three type:
-	//1) Deleting the node which is the leaf node
-	//2)
+
+	/* 4)level order traversal */
+	public void levelOrder(BstNode root) {
+		Queue<BstNode> queue = new LinkedList<BstNode>();
+		queue.add(root);
+		while (!queue.isEmpty()) {
+			BstNode temp = queue.poll();
+			if (temp.getLeft() != null) {
+				queue.add(temp.getLeft());
+				System.out.println(temp.getData() + ",");
+			} else if (temp.getRight() != null) {
+				queue.add(temp.getRight());
+			}
+		}
+	}
+
+	static int height(BstNode root) {
+		int height = 0;
+		Queue<BstNode> queue = new LinkedList<>();
+		queue.add(root);
+		while (!queue.isEmpty()) {
+			BstNode temp = queue.poll();
+			height++;
+			if (temp.left != null) {
+				queue.add(temp.left);
+			} else if (temp.right != null) {
+				queue.add(temp.right);
+			}
+		}
+		return height;
+	}
+
+	public static int maxDepth(BstNode node) {
+		if (node == null) {
+			return -1;
+		}
+		return 1 + Math.max(maxDepth(node.getLeft()), maxDepth(node.getRight()));
+	}
+
+	// height of the binary search tree
+
+	// delete
+	// Delete is the bst are of three type:
+	// 1) Deleting the node which is the leaf node
+	// 2)
 
 }
