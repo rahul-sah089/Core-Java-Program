@@ -1,72 +1,115 @@
 package com.program.datastructure.singlelinkedList;
 
 public class SingleLinkedList {
-	private Node start;
-	private Node end;
-	private int size;
+	/*
+	 * Operations: 1) Insertion a) Insertion at head b) Insertion at end c)
+	 * Insertion in middle
+	 */
+	/*
+	 * 2) Deletion a) At head b) At tail c) In between
+	 * 
+	 * 
+	 */
+
+	public Node head;
+	public int size;
 
 	public SingleLinkedList() {
-		start = null;
-		end = null;
+		head = null;
 		size = 0;
 	}
 
 	public boolean isEmpty() {
-		return (start == null);
+		if (size == 0) {
+			return true;
+		}
+		return false;
 	}
 
 	public int getSize() {
 		return size;
 	}
 
-	public void insertAtStart(int value) {
-		size++;
-		Node tempNode = new Node(value, null);
-		if (start == null) {
-			start = tempNode;
-			end = start;
+	// 1) Insertions
+	// a) At head
+	public void insertAtHead(int value) {
+		Node newNode = new Node(value);
+		if (head == null) {
+			head = newNode;
 		} else {
-			tempNode.setNext(start);
-			start = tempNode;
+			newNode.setNext(head);
+			head = newNode;
 		}
+		size++;
 	}
 
-	public void insertAtEnd(int value) {
-		size++;
-		Node tempNode = new Node(value, null);
-		if (start == null) {
-			start = tempNode;
-			end = start;
+	// b) At tail
+	public void insertAtTail(int value) {
+		Node newNode = new Node(value);
+		if (head == null) {
+			head = newNode;
 		} else {
-			end.setNext(tempNode);
-			end = tempNode;
+			Node tempNode = head;
+			Node prevNode = null;
+			while (tempNode != null) {
+				prevNode = tempNode;
+				tempNode = tempNode.getNext();
+			}
+			tempNode = newNode;
+			prevNode.setNext(tempNode);
 		}
+		size++;
 	}
 
-	public void displayList() {
-		Node tempNode = start;
-		while (tempNode.getNext() != null) {
-			System.out.print("==>" + tempNode.getData());
+	// c) At position
+	public void insertAtPosition(int value, int position) {
+		Node tempNode = head;
+		Node newNode = new Node(value);
+		// Check for the position
+		if (position < 0) {
+			position = 0;
+		}
+		if (position > size) {
+			position = size - 1;
+		}
+		if (position == 0) {
+			insertAtHead(value);
+		} else if (position == size - 1) {
+			insertAtTail(value);
+		} else {
+			// insert in middle
+			for (int i = 0; i < position - 1; i++) {
+				tempNode = tempNode.getNext();
+			}
+			newNode.setNext(tempNode.getNext());
+			tempNode.setNext(newNode);
+
+		}
+		size++;
+
+	}
+
+	public void reverseLinkList() {
+		Node prev = null;
+		Node temp = head;
+		Node nextNode;
+		while (temp != null) {
+			nextNode = temp.getNext();
+			temp.setNext(prev);
+			// time to move pointers
+			prev = temp;
+			temp = nextNode;
+		}
+		head = prev;
+	}
+
+	public void printList() {
+		Node tempNode = head;
+		while (tempNode != null) {
+			System.out.print(tempNode.getData() + " ");
 			tempNode = tempNode.getNext();
 		}
-		System.out.print("==>" + tempNode.getData());
 		System.out.println();
 	}
 
-	public void insertAtPosition(int value, int position) {
-		Node tempNode = new Node(value, null);
-		Node current = start;
-		if (position > size) {
-			System.out.println("Invalid position provided");
-		}
-		for (int i = 0; i < size; i++) {
-			System.out.println("i value==>" + i);
-			if (i == position - 1) {
-				Node aux = current.getNext();
-				current.setNext(tempNode);
-				tempNode.setNext(aux);
-			}
-			current = current.getNext();
-		}
-	}
 }
