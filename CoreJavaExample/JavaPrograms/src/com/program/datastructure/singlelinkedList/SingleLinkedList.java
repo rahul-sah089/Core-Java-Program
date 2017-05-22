@@ -103,6 +103,25 @@ public class SingleLinkedList {
 		head = prev;
 	}
 
+	public void removeElement(int index) {
+		Node currentNode = head;
+		Node prevNode;
+		if (index == 0) {
+			System.out.println("Remove element from the head");
+			head = head.getNext();
+		}
+		if (index == size - 1) {
+			System.out.println("Remove element from the tail");
+			while (currentNode != null) {
+				prevNode = currentNode;
+				currentNode = currentNode.getNext();
+			}
+		} else {
+			System.out.println("REmove element frrom the middle");
+		}
+
+	}
+
 	public void printList() {
 		Node tempNode = head;
 		while (tempNode != null) {

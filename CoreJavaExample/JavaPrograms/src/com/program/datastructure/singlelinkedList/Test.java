@@ -14,6 +14,7 @@ public class Test {
 		sll.insertAtTail(96);
 		sll.insertAtPosition(100, 3);
 		sll.reverseLinkList();
+		sll.removeElement(sll.getSize()-1);
 		sll.printList();
 		System.out.println("Main Method Ended");
 	}
