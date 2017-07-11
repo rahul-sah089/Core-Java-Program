@@ -1,3 +1,4 @@
+package com.program.random;
 /*
  * Description:
  * You are given an array of numbers. Find out the array index or position

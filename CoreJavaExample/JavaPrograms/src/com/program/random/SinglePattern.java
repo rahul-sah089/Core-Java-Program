@@ -1,3 +1,4 @@
+package com.program.random;
 public class SinglePattern {
 	private static SinglePattern mySingleTon;
 	static {

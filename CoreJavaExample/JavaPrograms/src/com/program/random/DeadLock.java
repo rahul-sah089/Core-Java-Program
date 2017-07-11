@@ -1,3 +1,4 @@
+package com.program.random;
 
 public class DeadLock {
 	String str1 = "Rahul";
